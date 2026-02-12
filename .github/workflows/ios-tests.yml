@@ -23,67 +23,31 @@ jobs:
         with:
           xcode-version: latest-stable
 
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: List schemes
+        run: xcodebuild -list -project BlitzMatrix.xcodeproj
+
+      - name: List available simulators
+        run: xcrun simctl list devices available
+
       - name: Run unit tests
         shell: bash
         run: |
           set -euo pipefail
 
-          # --- Choose workspace vs project (your repo has BlitzMatrix.xcodeproj) ---
-          BUILD_ARGS=()
-          if ls *.xcworkspace >/dev/null 2>&1; then
-            WS="$(ls *.xcworkspace | head -n 1)"
-            echo "Using workspace: $WS"
-            BUILD_ARGS=(-workspace "$WS")
-            LIST_CMD=(xcodebuild -list -workspace "$WS")
-          else
-            echo "Using project: BlitzMatrix.xcodeproj"
-            BUILD_ARGS=(-project "BlitzMatrix.xcodeproj")
-            LIST_CMD=(xcodebuild -list -project "BlitzMatrix.xcodeproj")
-          fi
-
-          echo "=== Xcode ==="
-          xcodebuild -version
-
-          echo "=== Schemes ==="
-          "${LIST_CMD[@]}"
-
-          # Extract scheme list and prefer BlitzMatrixApp if present, else pick first scheme.
-          SCHEMES="$("${LIST_CMD[@]}" | awk '
-            /Schemes:/ {inSchemes=1; next}
-            inSchemes && NF {gsub(/^[ \t]+/, "", $0); print $0}
-          ')"
-
-          if echo "$SCHEMES" | grep -qx "BlitzMatrixApp"; then
-            SCHEME="BlitzMatrixApp"
-          else
-            SCHEME="$(echo "$SCHEMES" | head -n 1)"
-          fi
-
-          if [ -z "${SCHEME:-}" ]; then
-            echo "ERROR: No schemes found. Ensure your scheme is Shared and committed to xcshareddata/xcschemes." >&2
-            exit 1
-          fi
-
-          echo "Using scheme: $SCHEME"
-
-          echo "=== Available Simulators ==="
-          xcrun simctl list devices available
-
-          # Pick first available iPhone simulator UDID (most robust vs hardcoding model names)
+          # Pick a real simulator UDID (avoids device-name mismatches)
           UDID="$(xcrun simctl list devices available | grep -E "iPhone" | head -n 1 | sed -nE 's/.*\(([0-9A-F-]+)\).*/\1/p')"
           if [ -z "${UDID:-}" ]; then
             echo "ERROR: Could not find an available iPhone simulator." >&2
             exit 1
           fi
 
-          DESTINATION="platform=iOS Simulator,id=$UDID"
-          echo "Using destination: $DESTINATION"
-
-          # Run tests
           xcodebuild test \
-            "${BUILD_ARGS[@]}" \
-            -scheme "$SCHEME" \
-            -destination "$DESTINATION" \
+            -project BlitzMatrix.xcodeproj \
+            -scheme BlitzMatrixApp \
+            -destination "platform=iOS Simulator,id=$UDID" \
             -configuration Debug \
             -resultBundlePath TestResults.xcresult \
             CODE_SIGNING_ALLOWED=NO | tee xcodebuild.log
