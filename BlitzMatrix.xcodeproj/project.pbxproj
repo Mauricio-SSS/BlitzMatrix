@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B2C3000000000000000001 /* BlitzMatrixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000001 /* BlitzMatrixApp.swift */; };
+		A1B2C3000000000000000002 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000002 /* AppContainer.swift */; };
+		A1B2C3000000000000000003 /* AppRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000003 /* AppRouterView.swift */; };
+		A1B2C3000000000000000004 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000004 /* GameEngine.swift */; };
+		A1B2C3000000000000000005 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000005 /* HomeView.swift */; };
+		A1B2C3000000000000000006 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000006 /* GameView.swift */; };
+		A1B2C3000000000000000007 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000007 /* ShopView.swift */; };
+		A1B2C3000000000000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000008 /* SettingsView.swift */; };
+		A1B2C3000000000000000009 /* HowToPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000009 /* HowToPlayView.swift */; };
+		A1B2C300000000000000000A /* ThemeTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000A /* ThemeTokens.swift */; };
+		A1B2C300000000000000000B /* ScreenPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000B /* ScreenPack.swift */; };
+		A1B2C300000000000000000C /* AnimatedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000C /* AnimatedBackgroundView.swift */; };
+		A1B2C300000000000000000D /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000D /* SettingsRepository.swift */; };
+		A1B2C300000000000000000E /* StoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000E /* StoreProvider.swift */; };
+		A1B2C300000000000000000F /* StoreKitStoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C200000000000000000F /* StoreKitStoreProvider.swift */; };
+		A1B2C3000000000000000010 /* BlitzMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C2000000000000000011 /* BlitzMatrixTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1B2C3300000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B2C1000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D00000000000000001;
+			remoteInfo = BlitzMatrixApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B2C2000000000000000001 /* BlitzMatrixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzMatrixApp.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000002 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000003 /* AppRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterView.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000004 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000005 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000006 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000007 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000009 /* HowToPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayView.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000A /* ThemeTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeTokens.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000B /* ScreenPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenPack.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000C /* AnimatedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackgroundView.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000D /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000E /* StoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProvider.swift; sourceTree = "<group>"; };
+		A1B2C200000000000000000F /* StoreKitStoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitStoreProvider.swift; sourceTree = "<group>"; };
+		A1B2C2000000000000000010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2C2000000000000000011 /* BlitzMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzMatrixTests.swift; sourceTree = "<group>"; };
+		A1B2C2F00000000000000001 /* BlitzMatrixApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzMatrixApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C2F00000000000000002 /* BlitzMatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlitzMatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3C00000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A1B2C3C00000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C1100000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C1100000000000000002 /* App */,
+				A1B2C1100000000000000003 /* Engine */,
+				A1B2C1100000000000000004 /* Features */,
+				A1B2C1100000000000000005 /* Theme */,
+				A1B2C1100000000000000006 /* Persistence */,
+				A1B2C1100000000000000007 /* Store */,
+				A1B2C1100000000000000008 /* BlitzMatrixTests */,
+				A1B2C1100000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C1100000000000000002 /* App */ = {isa = PBXGroup; path = App; sourceTree = "<group>"; children = (A1B2C2000000000000000001, A1B2C2000000000000000002, A1B2C2000000000000000003, A1B2C2000000000000000010); };
+		A1B2C1100000000000000003 /* Engine */ = {isa = PBXGroup; path = Engine; sourceTree = "<group>"; children = (A1B2C2000000000000000004); };
+		A1B2C1100000000000000004 /* Features */ = {isa = PBXGroup; path = Features; sourceTree = "<group>"; children = (A1B2C1100000000000000011, A1B2C1100000000000000012, A1B2C1100000000000000013, A1B2C1100000000000000014, A1B2C1100000000000000015); };
+		A1B2C1100000000000000011 /* Home */ = {isa = PBXGroup; path = Home; sourceTree = "<group>"; children = (A1B2C2000000000000000005); };
+		A1B2C1100000000000000012 /* Game */ = {isa = PBXGroup; path = Game; sourceTree = "<group>"; children = (A1B2C2000000000000000006); };
+		A1B2C1100000000000000013 /* Shop */ = {isa = PBXGroup; path = Shop; sourceTree = "<group>"; children = (A1B2C2000000000000000007); };
+		A1B2C1100000000000000014 /* Settings */ = {isa = PBXGroup; path = Settings; sourceTree = "<group>"; children = (A1B2C2000000000000000008); };
+		A1B2C1100000000000000015 /* HowToPlay */ = {isa = PBXGroup; path = HowToPlay; sourceTree = "<group>"; children = (A1B2C2000000000000000009); };
+		A1B2C1100000000000000005 /* Theme */ = {isa = PBXGroup; path = Theme; sourceTree = "<group>"; children = (A1B2C200000000000000000A, A1B2C200000000000000000B, A1B2C200000000000000000C); };
+		A1B2C1100000000000000006 /* Persistence */ = {isa = PBXGroup; path = Persistence; sourceTree = "<group>"; children = (A1B2C200000000000000000D); };
+		A1B2C1100000000000000007 /* Store */ = {isa = PBXGroup; path = Store; sourceTree = "<group>"; children = (A1B2C200000000000000000E, A1B2C200000000000000000F); };
+		A1B2C1100000000000000008 /* BlitzMatrixTests */ = {isa = PBXGroup; path = BlitzMatrixTests; sourceTree = "<group>"; children = (A1B2C2000000000000000011); };
+		A1B2C1100000000000000009 /* Products */ = {isa = PBXGroup; children = (A1B2C2F00000000000000001, A1B2C2F00000000000000002); sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D00000000000000001 /* BlitzMatrixApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3E00000000000000001 /* Build configuration list for PBXNativeTarget "BlitzMatrixApp" */;
+			buildPhases = (
+				A1B2C3B00000000000000001 /* Sources */,
+				A1B2C3C00000000000000001 /* Frameworks */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = BlitzMatrixApp;
+			productName = BlitzMatrixApp;
+			productReference = A1B2C2F00000000000000001 /* BlitzMatrixApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1B2C3D00000000000000002 /* BlitzMatrixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3E00000000000000002 /* Build configuration list for PBXNativeTarget "BlitzMatrixTests" */;
+			buildPhases = (
+				A1B2C3B00000000000000002 /* Sources */,
+				A1B2C3C00000000000000002 /* Frameworks */,
+			);
+			buildRules = ();
+			dependencies = (
+				A1B2C3400000000000000001 /* PBXTargetDependency */,
+			);
+			name = BlitzMatrixTests;
+			productName = BlitzMatrixTests;
+			productReference = A1B2C2F00000000000000002 /* BlitzMatrixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C1000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A1B2C3D00000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A1B2C3D00000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A1B2C3D00000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3E00000000000000003 /* Build configuration list for PBXProject "BlitzMatrix" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C1100000000000000001;
+			productRefGroup = A1B2C1100000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D00000000000000001 /* BlitzMatrixApp */,
+				A1B2C3D00000000000000002 /* BlitzMatrixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3B00000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3000000000000000001,
+				A1B2C3000000000000000002,
+				A1B2C3000000000000000003,
+				A1B2C3000000000000000004,
+				A1B2C3000000000000000005,
+				A1B2C3000000000000000006,
+				A1B2C3000000000000000007,
+				A1B2C3000000000000000008,
+				A1B2C3000000000000000009,
+				A1B2C300000000000000000A,
+				A1B2C300000000000000000B,
+				A1B2C300000000000000000C,
+				A1B2C300000000000000000D,
+				A1B2C300000000000000000E,
+				A1B2C300000000000000000F,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1B2C3B00000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3000000000000000010,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1B2C3400000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B2C3D00000000000000001 /* BlitzMatrixApp */;
+			targetProxy = A1B2C3300000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3A00000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1B2C3A00000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1B2C3A00000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BlitzMatrixApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1B2C3A00000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BlitzMatrixApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A1B2C3A00000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BlitzMatrixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlitzMatrixApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlitzMatrixApp";
+			};
+			name = Debug;
+		};
+		A1B2C3A00000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BlitzMatrixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlitzMatrixApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlitzMatrixApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3E00000000000000001 /* Build configuration list for PBXNativeTarget "BlitzMatrixApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3A00000000000000003,
+				A1B2C3A00000000000000004,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3E00000000000000002 /* Build configuration list for PBXNativeTarget "BlitzMatrixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3A00000000000000005,
+				A1B2C3A00000000000000006,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3E00000000000000003 /* Build configuration list for PBXProject "BlitzMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3A00000000000000001,
+				A1B2C3A00000000000000002,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B2C1000000000000000001 /* Project object */;
+}
