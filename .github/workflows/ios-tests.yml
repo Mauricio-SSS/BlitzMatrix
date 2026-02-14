@@ -36,14 +36,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
-          # Pick a real simulator UDID (avoids device-name mismatches)
           UDID="$(xcrun simctl list devices available | grep -E "iPhone" | head -n 1 | sed -nE 's/.*\(([0-9A-F-]+)\).*/\1/p')"
           if [ -z "${UDID:-}" ]; then
             echo "ERROR: Could not find an available iPhone simulator." >&2
             exit 1
           fi
-
           xcodebuild test \
             -project BlitzMatrix.xcodeproj \
             -scheme BlitzMatrixApp \
